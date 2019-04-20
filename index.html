@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container,html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .btnCont,.operationCont{
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            z-index: 100;
+            text-align: right;
+            width: 100%;
+            box-sizing: border-box;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+        .operationCont{
+            bottom: 50px;
+        }
+        button{
+            border: none;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            color: #fff;
+            background-color: #6dcff6;
+            padding: 4px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div class="operationCont">
+            <!-- <button id="startMove">开始移动</button> -->
+            <button id="drawLineSubsection">分段绘制AA00002</button>
+        </div>
+        <div class="btnCont">
+            <!-- <button>AA00002</button>
+            <button>AB00006</button>
+            <button>AD00003</button>
+            <button>AD00013</button>
+            <button>AD00053</button> -->
+            <button>AD00083</button>
+            <!-- <button>AD00419</button>
+            <button>AF00098</button>
+            <button>AF00131</button>
+            <button>AF00373</button> -->
+        </div>
+    </div>
+    
+</body>
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./js/amap.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.14&key=6b953aec395d345fd37e1b5434d587a9&plugin=AMap.DistrictSearch,AMap.MouseTool,AMap.Driving,AMap.Autocomplete,AMap.Geocoder,AMap.PlaceSearch,AMap.PolyEditor,AMap.CircleEditor,AMap.MarkerClusterer,AMap.GraspRoad"></script>
+<script src="https://unpkg.com/gcoord/dist/gcoord.js"></script>
+<script>
+    var mapDraw = $('#container').amapDraw();
+</script>
+
+<!-- <script src="./data/AA00002.js"></script>
+<script src="./data/AB00006.js"></script>
+<script src="./data/AD00003.js"></script>
+<script src="./data/AD00013.js"></script>
+<script src="./data/AD00053.js"></script> -->
+<script src="./data/AD00083.js"></script>
+<!-- <script src="./data/AD00419.js"></script>
+<script src="./data/AF00098.js"></script>
+<script src="./data/AF00131.js"></script>
+<script src="./data/AF00373.js"></script> -->
+<script src="./dataAA00002/AA00002-84.js"></script>
+<script src="./dataAA00002/AA00002-85.js"></script>
+<script src="./dataAA00002/AA00002-86.js"></script>
+<script src="./dataAA00002/AA00002-87.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+</html>
